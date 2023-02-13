@@ -1,0 +1,15 @@
+.menuheader {
+    cursor: pointer;
+}
+
+.menuheader:hover {
+    color: blue;
+}
+
+.menubody {
+    background-color: rgb(206, 218, 255);
+}
+
+.hidden {
+    display: none;
+}

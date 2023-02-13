@@ -1,26 +1,8 @@
 `use strict`
 
-let btn = document.getElementById(`hider`);
-let div = document.getElementById(`text`);
+let menuheader = document.querySelector(`.menuheader`);
+let menubody = document.querySelector(`.menubody`);
 
-////////////////////////A shitty way////////////////////////
-
-btn.addEventListener(`click`, () => {
-    div.style.display = `none`;
-    setTimeout(() => btn.style.display = `none`, 1000)
+menuheader.addEventListener(`click`, () => {
+    menubody.classList.contains(`hidden`) ? menubody.classList.remove(`hidden`) : menubody.classList.add(`hidden`);
 })
-
-/////////////////////An even shitier way////////////////////
-
-// btn.addEventListener(`click`, () => {
-//     div.style.transition = `.5s`
-//     div.style.pointerEvents = `none`;
-//     div.style.opacity = `0`;
-//     div.style.visibility = `hidden`;
-//     setTimeout(() => {
-//         btn.style.transition = `.5s`
-//         btn.style.pointerEvents = `none`;
-//         btn.style.opacity = `0`;
-//         btn.style.visibility = `hidden`;
-//     }, 1000)
-// })
