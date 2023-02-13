@@ -1,8 +1,23 @@
 `use strict`
 
-let menuheader = document.querySelector(`.menuheader`);
-let menubody = document.querySelector(`.menubody`);
+let body = document.body;
+let starter = document.querySelector(`.starter`);
+let massages = document.querySelectorAll(`.massage`);
+let deletebtn = document.createElement(`button`);
 
-menuheader.addEventListener(`click`, () => {
-    menubody.classList.contains(`hidden`) ? menubody.classList.remove(`hidden`) : menubody.classList.add(`hidden`);
+deletebtn.classList.add(`deletebtn`)
+deletebtn.innerHTML = `[X]`;
+
+starter.addEventListener(`click`, () => {
+    for (let i = 0; i < massages.length; i++) {
+        excludeletebtn = deletebtn.cloneNode(true);
+        massages[i].prepend(excludeletebtn);
+    }
+    starter.remove();
+})
+
+body.addEventListener(`click`, (e) => {
+    if (e.target.classList.contains(`deletebtn`)) {
+        e.target.parentElement.remove();
+    }
 })
