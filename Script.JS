@@ -5,7 +5,7 @@ let starter = document.querySelector(`.starter`);
 let massages = document.querySelectorAll(`.massage`);
 let deletebtn = document.createElement(`button`);
 
-deletebtn.classList.add(`deletebtn`)
+deletebtn.classList.add(`deletebtn`);
 deletebtn.innerHTML = `[X]`;
 
 starter.addEventListener(`click`, () => {
