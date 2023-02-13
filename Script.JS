@@ -1,18 +1,6 @@
 `use strict`
 
-const body = document.body;
-const list = document.querySelector(`.list`);
+let body = document.body;
+let btn = document.querySelector(`.btn`);
 
-function GetNewListItem(x) {
-    let NewItem = document.createElement(`li`);
-    NewItem.innerHTML = x;
-    body.append(NewItem)
-}
-
-for (; ;) {
-    let x = prompt(`What do you want to add?`)
-    if (x != false) {
-        GetNewListItem(x)
-    }
-    else { break }
-}
+btn.addEventListener(`click`, () => body.innerHTML = ``);
