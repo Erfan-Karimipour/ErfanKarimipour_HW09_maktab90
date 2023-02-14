@@ -125,6 +125,7 @@ body {
 .alert {
     position: absolute;
     width: 20vw;
+    min-width: 20rem;
     height: 20vh;
     background-color: #fafafa;
     border-radius: 1rem;
