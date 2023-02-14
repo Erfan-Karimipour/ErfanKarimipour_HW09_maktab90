@@ -1,36 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veros</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="Style.CSS">
     <link rel="icon" href="G.ico">
 </head>
 
-<body class="container">
-    <div class="tool">
-        <div class="title boxshadow" onmouseover="Visible(this) " onmouseout="Hide(this)">
-            <ion-icon name="brush"></ion-icon> Brush
-        </div>
-        <div class="tooltip hidden">You can use this tool to draw some nasty shit 😈</div>
-    </div>
-    <div class="tool">
-        <div class="title boxshadow" onmouseover="Visible(this) " onmouseout="Hide(this)">
-            <ion-icon name="brush"></ion-icon> Brush
-        </div>
-        <div class="tooltip hidden">You can use this tool to draw some chaotic shit</div>
-    </div>
-    <div class="tool">
-        <div class="title boxshadow" onmouseover="Visible(this) " onmouseout="Hide(this)">
-            <ion-icon name="color-wand"></ion-icon> Wand
-        </div>
-        <div class="tooltip hidden">Select the color</div>
-    </div>
+<body dir="rtl">
+    <div class="container-fluid row g-0">
+        <section class=" section-right text-center col-8">
+            <h2 class="p-4">رستوران مک وروس شعبه تهران</h2>
+            <div class="container section-right-scroll">
+                <div class="row gap-5">
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر</h4>
+                        8,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر گوزن</h4>
+                        19,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gap-5">
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>چیزبر</h4>
+                        15,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>چیزبر دوبل گوزن</h4>
+                        25,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-5">
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر مرغ</h4>
+                        14,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر گاو شیرده</h4>
+                        21,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-5">
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر طوطی</h4>
+                        199,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر ماهی</h4>
+                        51,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-5">
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر انسان</h4>
+                        1,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر گوشت فیک</h4>
+                        5,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-5">
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر فیل</h4>
+                        82,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر نهنگ</h4>
+                        229,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gap-5">
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر یوزپلنگ در حال انقراض</h4>
+                        980,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md bg-white buyingCard p-2 mb-3">
+                        <img src="Hambur.png" class="img m-3">
+                        <h4>همبر تانوس</h4>
+                        1,240,000 تومان
+                        <div class="pt-4">
+                            <p class="float-start price">0</p>
+                            <div class="float-end BuyAndSell">
+                                <button class=" btnAdd">+</button>
+                                <span class="counter p-2">0</span>
+                                <button class=" btnRemove">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section-left col-2">
+            <div class="alloftheorders mx-3 mt-3">
+                <p class="float-end">جمع کل سفارشات:</p>
+                <p class="float-start">0 تومان</p>
+                <br> <br>
+            </div>
+            <div class="taxes mx-3">
+                <p class="float-end ">جمع سرویس و کارمزد:</p>
+                <p class="float-start">0 تومان</p>
+                <br> <br>
+            </div>
+            <div class="off mx-3">
+                <p class="float-end">تخفیف:</p>
+                <p class="float-start">0 تومان</p>
+            </div>
+            <div class="codeInput w-100 m-3">
+                <br><br>
+                <input class="offCode float-end w-85" placeholder="کد تخفیف"><ion-icon name="checkmark-sharp"
+                    class="bg-red button"></ion-icon>
+                </input>
+            </div>
+            <div class="m-3 mt-5 bg-gold">
+                <p class="float-end ">مبلغ قابل پرداخت:</p>
+                <p class="float-start allPrice">0 تومان</p>
+            </div>
+            <br><br>
+            <button class="buy m-3">ثبت سفارش</button>
+        </section>
 
 
+
+
+    </div>
 
 
     <script src="Script.JS">

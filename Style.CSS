@@ -1,39 +1,125 @@
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+body {
+    background-color: #db2818;
 }
 
-.tool {
-    width: 5rem;
-    text-align: center;
-    color: rgb(41, 41, 41);
-    margin: 1rem;
+.section-right {
+    background-color: #f2f6ff;
+    height: 90vh;
+    margin: 3rem;
+    overflow: hidden;
+    border-radius: 1.4rem;
 }
 
-.title {
-    background-color: rgb(224, 224, 224);
-    padding: 1rem;
+.section-right-scroll {
+    overflow-y: scroll;
+    height: 85%;
+    padding: 2rem;
+    border-top: 2px solid rgb(212, 212, 212);
+}
+
+.img {
+    width: 5.5rem;
+    float: right;
+}
+
+.buyingCard {
+    border-radius: 1rem;
+    box-sizing: border-box;
+    text-align: right;
+
+}
+
+.btn {
+    height: 2rem;
+    box-sizing: border-box;
+}
+
+.counter {
+    vertical-align: middle;
+}
+
+.btnRemove,
+.btnAdd {
+    background-color: #9e0b16;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    vertical-align: middle;
     transition: all .2s;
-    border-radius: .3rem;
+    width: 2rem;
+}
+
+.btnRemove:hover,
+.btnAdd:hover {
+    background-color: #ff1928;
+    transition: all .2s;
+}
+
+.btnRemove {
+    border-radius: .7rem 0 0 .7rem;
+}
+
+.btnAdd {
+    border-radius: 0 .7rem .7rem 0;
+}
+
+.section-left {
+    background-color: #f2f6ff;
+    height: 40vh;
+    width: 25rem;
+    margin-top: 3rem;
+    overflow: hidden;
+    border-radius: 1.4rem;
+}
+
+
+.bg-red {
+    background-color: #9e0b16;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+}
+
+.button {
     cursor: pointer;
 }
 
-.boxshadow {
-    box-shadow: 1px 1px 12px;
+.button:hover {
+    background-color: #ff1928;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.offCode {
+    height: 2rem;
+}
+
+.bg-gold {
+    background-color: #ffc423;
+    font-weight: 400;
+}
+
+.buy {
+    background-color: #9e0b16;
+    color: #fafafa;
+    border: none;
+    width: 93%;
+    height: 4rem;
+    border-radius: .3rem;
+    text-align: center;
     transition: all .2s;
 }
 
-.tooltip {
-    margin-top: 5px;
-    border: 1px solid rgb(209, 209, 209);
-    padding: .2rem;
-    font-size: small;
+.buy:hover {
+    background-color: #db2818;
     transition: all .2s;
 }
 
-.hidden {
-    transition: all .2s;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+@media(0px<width<1488px) {
+    .section-left {
+        margin: auto auto;
+    }
 }
