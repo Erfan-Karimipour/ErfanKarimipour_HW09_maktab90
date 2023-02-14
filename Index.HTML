@@ -10,10 +10,33 @@
     <link rel="icon" href="G.ico">
 </head>
 
-<body>
+<body class="container">
+    <div class="tool">
+        <div class="title boxshadow" onmouseover="Visible(this) " onmouseout="Hide(this)">
+            <ion-icon name="brush"></ion-icon> Brush
+        </div>
+        <div class="tooltip hidden">You can use this tool to draw some nasty shit 😈</div>
+    </div>
+    <div class="tool">
+        <div class="title boxshadow" onmouseover="Visible(this) " onmouseout="Hide(this)">
+            <ion-icon name="brush"></ion-icon> Brush
+        </div>
+        <div class="tooltip hidden">You can use this tool to draw some chaotic shit</div>
+    </div>
+    <div class="tool">
+        <div class="title boxshadow" onmouseover="Visible(this) " onmouseout="Hide(this)">
+            <ion-icon name="color-wand"></ion-icon> Wand
+        </div>
+        <div class="tooltip hidden">Select the color</div>
+    </div>
+
+
+
 
     <script src="Script.JS">
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
