@@ -29,15 +29,17 @@ sectionRight.addEventListener(`click`, (e) => {
     }
 
     if (e.target.classList.contains(`btnRemove`)) {
-        e.target.parentElement.querySelector(`span`).innerHTML--;
-        e.target.parentElement.parentElement.querySelector(`.price`).innerHTML = e.target.parentElement.querySelector(`span`).innerHTML * prices[e.target.parentElement.parentElement.parentElement.id];
-        let taxes = (prices[e.target.parentElement.parentElement.parentElement.id] / 100) * 5;
-        overalltax -= taxes;
-        allTaxes.innerHTML = overalltax;
-        overallprice -= prices[e.target.parentElement.parentElement.parentElement.id];
-        console.log(overallprice);
-        firstOverallPrice.innerHTML = overallprice;
-        overall.innerHTML = overallprice + overalltax;
+        if (e.target.parentElement.querySelector(`span`).innerHTML > 0) {
+            e.target.parentElement.querySelector(`span`).innerHTML--;
+            e.target.parentElement.parentElement.querySelector(`.price`).innerHTML = e.target.parentElement.querySelector(`span`).innerHTML * prices[e.target.parentElement.parentElement.parentElement.id];
+            let taxes = (prices[e.target.parentElement.parentElement.parentElement.id] / 100) * 5;
+            overalltax -= taxes;
+            allTaxes.innerHTML = overalltax;
+            overallprice -= prices[e.target.parentElement.parentElement.parentElement.id];
+            console.log(overallprice);
+            firstOverallPrice.innerHTML = overallprice;
+            overall.innerHTML = overallprice + overalltax;
+        }
     }
 })
 
