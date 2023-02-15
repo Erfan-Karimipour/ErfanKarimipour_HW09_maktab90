@@ -1,13 +1,19 @@
-body {
+.background {
     background-color: #db2818;
+    transition: all .05s;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
 
 .section-right {
     background-color: #f2f6ff;
-    height: 58rem;
+    height: 48rem;
     margin: 3rem;
+    margin-bottom: 2rem;
     overflow: hidden;
     border-radius: 1.4rem;
+
 }
 
 .section-right-scroll {
@@ -124,14 +130,27 @@ body {
 
 .alert {
     position: absolute;
-    width: 20vw;
-    min-width: 20rem;
-    height: 20vh;
+    width: 2vw;
+    min-width: 2rem;
+    height: 2vh;
     background-color: #fafafa;
     border-radius: 1rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.alerton {
+    width: 20vw;
+    min-width: 20rem;
+    height: 20vh;
+    opacity: 100;
+    pointer-events: all;
+    visibility: visible;
 }
 
 .btn-alert {
@@ -158,6 +177,16 @@ body {
     transition: all .2s;
 }
 
+.blur {
+    filter: blur(5px) brightness(70%);
+    pointer-events: none;
+    transition: all .05s;
+}
+
+.footer {
+    color: red;
+    background-color: black;
+}
 
 @media(0px<width<1488px) {
     .container-fluid {
@@ -166,6 +195,8 @@ body {
 
     .section-right {
         margin: 2rem auto;
+        margin-top: 0;
+        height: 27rem;
     }
 
     .section-left {
@@ -176,6 +207,12 @@ body {
 @media(0px<width<594px) {
     .buyingCard {
         min-width: auto;
+    }
+
+    .section-right {
+        margin: 1rem auto;
+        margin-top: 0;
+        width: auto;
     }
 
     .section-left {

@@ -8,6 +8,8 @@ let allTaxes = document.querySelector(`.taxes`);
 let offCode = document.querySelector(`.offCode`);
 let offsubmit = document.querySelector(`.offsubmit`);
 let off = document.querySelector(`.offcodeshow`);
+let order = document.querySelector(`.buy`);
+let alertbtn = document.querySelector(`.ok`);
 
 let prices = [8000, 19000, 15000, 25000, 14000, 21000, 199000, 51000, 1000, 5000, 82000, 299000, 980000, 1240000];
 
@@ -47,17 +49,25 @@ offsubmit.addEventListener(`click`, () => {
 
     if (offallow == true) {
         switch (offCode.value) {
-            case `Golden`: off.innerHTML = ` 30 `, overall.innerHTML -= (overallprice / 100) * 30;
+            case `Golden`: off.innerHTML = ` 30 `, overall.innerHTML -= (overall.innerHTML / 100) * 30;
                 offallow = false;
                 return;
-            case `Silver`: off.innerHTML = ` 20 `, overall.innerHTML -= (overallprice / 100) * 20;
+            case `Silver`: off.innerHTML = ` 20 `, overall.innerHTML -= (overall.innerHTML / 100) * 20;
                 offallow = false;
                 return;
-            case `Bronze`: off.innerHTML = ` 10 `, overall.innerHTML -= (overallprice / 100) * 10;
+            case `Bronze`: off.innerHTML = ` 10 `, overall.innerHTML -= (overall.innerHTML / 100) * 10;
                 offallow = false;
                 return;
         }
     }
 })
 
+order.addEventListener(`click`, () => {
+    document.querySelector(`.alert`).classList.add(`alerton`);
+    document.querySelector(`.background`).classList.add(`blur`)
+})
 
+alertbtn.addEventListener(`click`, () => {
+    document.querySelector(`.alert`).classList.remove(`alerton`);
+    document.querySelector(`.background`).classList.remove(`blur`)
+})
