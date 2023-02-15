@@ -1,18 +1,18 @@
-`use strict`
+'use strict'
 
-const body = document.body;
-const list = document.querySelector(`.list`);
+let ul = document.querySelector(`ul`);
 
-function GetNewListItem(x) {
-    let NewItem = document.createElement(`li`);
-    NewItem.innerHTML = x;
-    body.append(NewItem)
+function createNewLi(text) {
+    let newli = document.createElement(`li`);
+    newli.innerHTML = text;
+    ul.append(newli);
 }
 
-for (; ;) {
-    let x = prompt(`What do you want to add?`)
-    if (x != false) {
-        GetNewListItem(x)
+while (1) {
+    let text = prompt(`Give me a text!`)
+    if (text === `` || text === null) {
+        break;
+    } else {
+        createNewLi(text);
     }
-    else { break }
 }
